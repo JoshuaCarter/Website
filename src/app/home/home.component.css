@@ -1,0 +1,23 @@
+
+/* 	Wrapper for each row of content	
+	[padding] to enable collapsable text margins 
+*/
+.wrap {	
+	display: block;
+	width: 100%;
+	padding: 10px 20px 10px 20px;
+}
+
+/* 	Title image on right */
+.title-img {
+	display: inline-block;
+	width: 120px;
+	padding-left: 10px;
+	margin-bottom: -30px;
+}
+
+/* 	Title text on left */
+.title-txt {
+	display: inline-block;
+	vertical-align: bottom;
+}

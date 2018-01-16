@@ -1,0 +1,22 @@
+<div #nav class="nav" (click)="menuExpand()" (mouseleave)="menuCollapse()">
+	<a class="button fnt-mono"><span class="burger">&#9776;</span> Menu</a>
+	<a class="fnt-mono" [routerLink]="['/home']" routerLinkActive="active" tabindex="-1"
+	 (click)="onNavigate()">Home</a>
+	<a class="fnt-mono" [routerLink]="['/resume']" routerLinkActive="active" tabindex="-1"
+	 (click)="onNavigate()">Resume</a>
+	<!-- <a class="fnt-mono" [routerLink]="['/contact']" routerLinkActive="active" tabindex="-1"
+	 (click)="onNavigate()">Contact</a> -->
+	<a class="fnt-mono" [routerLink]="['/about']" routerLinkActive="active" tabindex="-1"
+	 (click)="onNavigate()">About</a>
+	 <div class="icons">		 
+		<a href="https://github.com/JoshuaCarter/Website" target="_blank">
+			<i class="fa fa-lg fa-github" aria-hidden="true"></i>
+		</a>
+		<a href="https://www.linkedin.com/in/joshua-carter-dev" target="_blank">
+			<i class="fa fa-lg fa-linkedin-square" aria-hidden="true"></i>
+		</a>
+		<a #email href="" (click)="onEmail(email)">
+			<i class="fa fa-lg fa-envelope" aria-hidden="true"></i>
+		</a>
+	</div>
+</div>

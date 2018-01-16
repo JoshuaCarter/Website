@@ -1,0 +1,96 @@
+
+.contact {
+	margin: 0 auto 0;
+	width: 500px;
+}
+textarea {
+	max-width: 498px;
+	min-width: 498px;
+	padding: 5px;
+}
+input {	
+	float: right;
+	width: 80%;
+	padding: 3px 5px;
+	margin: 8px 2px 2px 0;
+}
+
+@media (max-width: 600px) {
+	.contact {
+		width: 85%;
+	}	
+	textarea {
+		max-width: 85%;
+		min-width: 100%;
+	}
+}
+
+@media (max-width: 400px) {
+	input {
+		width: 100%;
+		margin: 0;
+	}
+}
+
+input,
+textarea,
+button {
+	color: black;
+	outline: none;
+	border: none;
+	border-radius: 3px;
+}
+
+button {
+	padding: 2px 5px;
+}
+button:hover {
+	background-color: white;
+}
+button:active {
+	color: #EEE;
+	background-color: gray;
+}
+
+label {
+	display: inline-block;
+	margin: 10px 0 5px 0;
+}
+
+.valid {
+	box-shadow: 7px 0 0px 0px rgba(0, 220, 0, 255);
+}
+
+.invalid {
+	box-shadow: 7px 0 0px 0px rgba(255, 0, 0, 255);
+}
+
+input.check-box {
+	width: auto;
+	float: initial;
+	margin: 0px 0 0 0;
+}
+
+.check-label {
+	font-size: 14px;
+	vertical-align: 10%;
+}
+
+.submit {
+	float: right;
+	width: auto;
+	margin: 7px 0 0 0;
+}
+
+.feedback {
+	visibility: hidden;
+	margin: 15px 0 0 0;
+	border: 2px solid #61C9A8;
+	border-radius: 5px;
+	background-color: #392D3A;
+}
+
+.feedback p {
+	margin: 7px;
+	font-size: 14px;
+}

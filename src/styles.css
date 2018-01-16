@@ -1,0 +1,212 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	background-color: rgb(44, 41, 44);
+}
+
+* {
+	color: #F0DFCD;
+	font-family: Arial, Helvetica, sans-serif;
+	box-sizing: border-box;
+}
+
+/* Color styles */
+.col-tan {
+	color: #F0DFCD;
+}
+.col-grn {
+	color: #61C9A8;
+}
+.col-red {
+	color: #A53737;
+}
+.col-drk {
+	color: #392D3A;
+}
+.col-dim {
+	color: #4C3B4D;
+}
+.col-lit {
+	color: #614C63;
+}
+.col-bg-tan {
+	background-color: #F0DFCD;
+}
+.col-bg-grn {
+	background-color: #61C9A8;
+}
+.col-bg-red {
+	background-color: #A53737;
+}
+.col-bg-drk {
+	background-color: #392D3A;
+}
+.col-bg-dim {
+	background-color: #4C3B4D;
+}
+.col-bg-lit {
+	background-color: #614C63;
+}
+
+/* Display styles */
+.dis-blk {
+	display: block;
+}
+.dis-inl {
+	display: inline;
+}
+.dis-inl-blk {
+	display: inline-block;
+}
+.dis-none {
+	display: none;
+}
+.dis-auto {
+	display: auto;
+}
+
+/* Layout styles */
+.page {	
+	display: inline-block;
+	margin: 70px 0 50px;
+	width: 100%;
+	user-select: none;
+}
+.cntr-blk {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+.cntr-tbl {
+	display: table;
+	margin: 0 auto;
+	text-align: center;
+}
+.br-4 {
+	display: block;
+	margin-top: 4px;
+	line-height: 4px;
+	content: " ";
+}
+.br-8 {
+	display: block;
+	margin-top: 8px;
+	line-height: 8px;
+	content: " ";
+}
+.br-12 {
+	display: block;
+	margin-top: 12px;
+	line-height: 12px;
+	content: " ";
+}
+.br-16 {
+	display: block;
+	margin-top: 16px;
+	line-height: 16px;
+	content: " ";
+}
+.br-20 {
+	display: block;
+	margin-top: 20px;
+	line-height: 20px;
+	content: " ";
+}
+.br-line {
+	display: block;
+	margin-top: 0px;
+	line-height: 0px;
+	content: " ";
+	width: 100%;
+	border-top: 1px solid;
+}
+.maxw-600 {
+	max-width: 600px;
+}
+.maxw-400 {
+	max-width: 400px;
+}
+
+/* Text size styles */
+.txt-cntr {
+	text-align: center;
+}
+.txt-h1 {
+	font-size: 40px;
+	line-height: 44px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.txt-h3 {
+	font-size: 22px;
+	line-height: 26px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.txt-12 {
+	font-size: 12px;
+	line-height: 16px;
+}
+.txt-14 {
+	font-size: 14px;
+	line-height: 18px;
+}
+.txt-16 {
+	font-size: 16px;
+	line-height: 20px;
+}
+.txt-18 {
+	font-size: 18px;
+	line-height: 22px;
+}
+.txt-20 {
+	font-size: 20px;
+	line-height: 24px;
+}
+
+/* Font styles */
+.fnt-mono {
+	font-family: Consolas, Monaco, monospace;
+}
+.fnt-sans {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Button/link styles */
+.btn-big {
+	padding: 10px;
+	color: #F0DFCD;
+	font-size: 20px;
+	border: 2px solid #61C9A8;
+	border-radius: 5px;
+	background-color: #392D3A;
+	cursor: pointer;
+	outline: none;
+	user-select: none;
+}
+.btn-big:hover {
+	color: #392D3A;
+	background-color: #61C9A8;
+	border: 2px solid #392D3A;
+}
+
+.btn-a {
+	color: rgb(231, 187, 142);
+	text-align: center;
+	cursor: pointer;
+}
+.btn-a:hover {
+	text-decoration: underline;
+}
+
+/* Touch styles */
+.touch-action-none {
+	touch-action: none;
+}
+
+.ovr-hide {
+	overflow: hidden;
+}

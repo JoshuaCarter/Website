@@ -1,0 +1,29 @@
+<div class="page">
+	<div class="wrap cntr-blk">
+		<div class="title-txt txt-cntr txt-20">			
+			<h1 class="txt-h1">Joshua Carter</h1>
+			<h3 class="txt-h3">Programmer &amp; Web&nbsp;Dev</h3>
+		</div>
+		<img class="title-img" src="assets/html5_logo.png" alt="html 5 logo">
+	</div>
+	<div class="wrap col-bg-lit">
+		<div class="cntr-blk txt-16 maxw-600">			
+			<p>Hi, my name is Josh. I've studied and taught C++/C# programming (for video games), and now I'm looking to break into web development. This is the first website I've ever built. One look at it and you can probably tell that I'm not a graphic designer, but I hope it demonstrates entry level skills for a web programmer.</p>
+			<p>Included below for your enjoyment is a simple rendition of breakout, made entirely with html, css, and ts/js. In other words, the game is not embedded into the website, the game <em>is</em> the website! And be sure to check out your ranking in the high scores.</p>
+		</div>
+	</div>
+	<div class="wrap cntr-blk">
+		<br class="br-16">
+		<button class="btn-big fnt-mono" (click)="onPlayGame()">Play Breakout</button>
+		<br class="br-4">
+		<a class="btn-a txt-12" (click)="onHighScores()">View High Scores</a>
+		<br class="br-4">
+		<div class="cntr-blk txt-12 maxw-400">
+			<p>Move the paddle with click-drag, touch-drag, or the arrow keys. Moving the paddle when it contacts the ball will influence the
+				ball's direction.</p>
+			<p><strong>Enter your high score at the end.</strong></p>
+		</div>
+	</div>
+</div>
+
+<router-outlet name="game-outlet"></router-outlet>

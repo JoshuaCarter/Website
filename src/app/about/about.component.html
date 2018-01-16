@@ -1,0 +1,152 @@
+<div class="page" (click)="onBlur()">
+	<h1 class="cntr-blk">About This Website</h1>
+	<div class="wrap">
+		<p>This is the first website I've built. It is currently a work in progress and I'm still learning a lot as I go along. You can see the source-code via the github link in the nav menu.</p>
+		<p>I've made an effort to use modern tools and practices. The following technologies were used in this website's construction.</p>
+	</div>
+	<div class="col-bg-lit">
+		<div class="wrap">
+			<h3>Languages:</h3>
+			<ul>
+				<li>HTML 
+					<i class="fa fa-info-circle" aria-hidden="true" (click)="onTip($event)">
+						<div class="tip">Also with Angular directives and bindings.</div>
+					</i>
+				</li>
+				<li>CSS 
+					<i class="fa fa-info-circle" aria-hidden="true" (click)="onTip($event)">
+						<div class="tip">From scratch, i.e. no bootstrap or similar css lib.</div>
+					</i>
+				</li>
+				<li>Typescript 
+					<i class="fa fa-info-circle" aria-hidden="true" (click)="onTip($event)">
+						<div class="tip">For the frontend with Angular (and because it's familier to me and my C# background).</div>
+					</i>
+				</li>
+				<li>PHP 
+					<i class="fa fa-info-circle" aria-hidden="true" (click)="onTip($event)">
+						<div class="tip">For the backend with MySQL.</div>
+					</i>
+				</li>
+				<li>MySQL
+					<i class="fa fa-info-circle" aria-hidden="true" (click)="onTip($event)">
+						<div class="tip">Using the built-in mysqli lib in php.</div>
+					</i>
+				</li>
+				<li>JSON 
+					<i class="fa fa-info-circle" aria-hidden="true" (click)="onTip($event)">
+						<div class="tip">For config files and comms between frontend and backend.</div>
+					</i>
+				</li>
+			</ul>
+			<h3>Tools:</h3>
+			<ul>
+				<li>VSCode 
+					<i class="fa fa-info-circle" aria-hidden="true" (click)="onTip($event)">
+						<div class="tip">My chosen IDE.</div>
+					</i>
+				</li>
+				<li>Angular 4
+					<i class="fa fa-info-circle" aria-hidden="true" (click)="onTip($event)">
+						<div class="tip">Chosen framework for responsive front-loaded design.</div>
+					</i>
+				</li>
+				<li>Amazon Web Services 
+					<i class="fa fa-info-circle" aria-hidden="true" (click)="onTip($event)">
+						<div class="tip">I use EC2, RDS, and Route 53. I chose not to use Elastic Beanstalk so that I would have to learn to SSH into a remote server and config it myself.</div>
+					</i>
+				</li>
+				<li>Bash 
+					<i class="fa fa-info-circle" aria-hidden="true" (click)="onTip($event)">
+						<div class="tip">For Angular CLI and Linux CLI on my EC2 instance.</div>
+					</i>
+				</li>
+				<li>WinSCP 
+					<i class="fa fa-info-circle" aria-hidden="true" (click)="onTip($event)">
+						<div class="tip">For transfering files to my EC2 instance.</div>
+					</i>
+				</li>
+				<li>WAMP PhpMyAdmin 
+					<i class="fa fa-info-circle" aria-hidden="true" (click)="onTip($event)">
+						<div class="tip">For both local and remote database management.</div>
+					</i>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="wrap">
+		<p>While this website probably doesn't look like much to the average viewer, I've tried to include some bells and whistles in the finer details.</p>
+		<p>Here are a few of the more notable aspects of this website.</p>
+	</div>
+	<div class="col-bg-lit">
+		<div class="wrap">
+			<h3>Frontend</h3>
+			<ul>
+				<li>Adaptive navbar 
+					<i class="fa fa-info-circle" aria-hidden="true" (click)="onTip($event)">
+						<div class="tip">Standard top-bar for larger screens, and a drop-down menu for smaller screens.</div>
+					</i>
+				</li>
+				<li>Adaptive layout
+					<i class="fa fa-info-circle" aria-hidden="true" (click)="onTip($event)">
+						<div class="tip">All pages should present well on a variety of screen sizes. For example, the resume page changes to vertical stacking on smaller screens, and the tooltips on this page are sized and positioned adaptively.</div>
+					</i>
+				</li>
+				<li>Browser compatibility
+					<i class="fa fa-info-circle" aria-hidden="true" (click)="onTip($event)">
+						<div class="tip">Tested on Chrome, Firefox, Edge, Chrome for Android, and Firefox for Android. I hope to test on more platforms in the future but don't currently have the means.</div>
+					</i>
+				</li>
+				<li>Adaptive functionality
+					<i class="fa fa-info-circle" aria-hidden="true" (click)="onTip($event)">
+						<div class="tip">Email nav button coppies to clipboard if possible, else displays it for the user to copy.</div>
+					</i>
+				</li>
+			</ul>
+			<h3>Breakout Game</h3>
+			<ul>
+				<li>Element creation and manipulation 
+					<i class="fa fa-info-circle" aria-hidden="true" (click)="onTip($event)">
+						<div class="tip">Generating elements, styling them, moving them, destroying them, etc.</div>
+					</i>
+				</li>
+				<li>User input 
+					<i class="fa fa-info-circle" aria-hidden="true" (click)="onTip($event)">
+						<div class="tip">Mouse, keyboard, and touch input for the paddle.</div>
+					</i>
+				</li>
+				<li>Collision detection 
+					<i class="fa fa-info-circle" aria-hidden="true" (click)="onTip($event)">
+						<div class="tip">Trickier than you might think due to corner clipping (i.e. tunneling).</div>
+					</i>
+				</li>
+			</ul>
+			<h3>High Scores</h3>
+			<ul>
+				<li>Custom cross-browser scrollbar 
+					<i class="fa fa-info-circle" aria-hidden="true" (click)="onTip($event)">
+						<div class="tip">See scores on home page. Works on all tested browsers. I sneakily hide the real scrollbar and semi-mimic it's properties.</div>
+					</i>
+				</li>
+				<li>Highlight new high scores 
+					<i class="fa fa-info-circle" aria-hidden="true" (click)="onTip($event)">
+						<div class="tip">When a new high score is entered at the end of the Breakout game, the relevant page of scores is retreaved, and then the new score is highlighted and scrolled to.</div>
+					</i>
+				</li>
+			</ul>
+			<h3>Backend</h3>
+			<ul>
+				<li>Semi-complex SQL queries 
+					<i class="fa fa-info-circle" aria-hidden="true" (click)="onTip($event)">
+						<div class="tip">The unordered nature of a relational database means that treating it as a ranked table of high-scores requires some fakery. A score's rank is generated as part of a query using table aliases, user variables, and table joins.</div>
+					</i>
+				</li>
+				<li>Data validation 
+					<i class="fa fa-info-circle" aria-hidden="true" (click)="onTip($event)">
+						<div class="tip">Prevent SQL injection.</div>
+					</i>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>

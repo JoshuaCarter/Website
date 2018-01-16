@@ -1,0 +1,52 @@
+
+.resume {
+	display: inline-block;
+	position: absolute;
+	margin-top: 44px;
+	width: 100%;
+	height: calc(100% - 44px);
+	user-select: none;
+}
+
+embed {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: calc(100%);
+	border: none;
+	z-index: 1;
+	user-select: none;
+	outline: none;
+}
+
+.wrap {
+	width: 100%;
+	max-width: 500px;
+}
+
+.warn {
+	display: block;
+	position: absolute;
+	width: 100%;
+	padding: 10px;
+	top: 70px;
+	z-index: 0;
+
+	animation: fadeInWithDelay 2s linear;
+}
+
+@keyframes fadeInWithDelay {
+	0% {
+		display: none;
+		opacity: 0;
+	}
+
+	50% {
+		display: block;
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;		
+	}
+}

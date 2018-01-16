@@ -1,0 +1,22 @@
+<div class="page">
+	<div class="contact">
+		<h2>Contact Form</h2>
+		<form id="contact-form" (ngSubmit)="onSubmit()">
+			<label for="name">Name:</label>
+			<input type="text" name="name" #nameInput [(ngModel)]="name" (ngModelChange)="updateName()">
+			<br>
+			<label for="email">Email:</label>
+			<input type="email" name="email" #emailInput [(ngModel)]="email" (ngModelChange)="updateEmail()">
+			<br>
+			<label for="message">Message:</label>
+			<textarea form="contact-form" name="message" [(ngModel)]="message" rows="10" placeholder="Type your message here"></textarea>
+			<br>
+			<input class="check-box" type="checkbox" name="copy" [(ngModel)]="copy" required>
+			<label class="check-label" for="copy">Send me a copy</label>
+			<button class="submit" type="submit">Send</button>
+		</form>
+		<div #feedback class="feedback">
+			<p></p>
+		</div>
+	</div>
+</div>

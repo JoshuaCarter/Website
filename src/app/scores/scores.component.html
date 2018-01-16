@@ -1,0 +1,47 @@
+<div class="page">
+	<div class="scores">
+		<button class="close" (click)="closeScores()">X</button>
+		<div class="header">			
+			<h1>Scores</h1>
+			<div class="search">
+				<input #searchInput class="searchInput" type="text" maxlength="10"
+					(keydown)="onSearchKey($event)">
+				<button class="searchBtn" (click)="onSearch()">
+					<i class="fa fa-search" aria-hidden="true"></i>
+				</button>				
+			</div>
+		</div>
+		<div class="page-nav">
+			<button class="btn-page prev-page" (click)="getPrevPage()">
+				<i class="fa fa-caret-left" aria-hidden="true"></i>
+			</button>
+			<button class="btn-page next-page" (click)="getNextPage()">
+				<i class="fa fa-caret-right" aria-hidden="true"></i>
+			</button>
+			<p class="page-count fnt-sans">[ {{pageText}} ]</p>
+		</div>
+		<div class="list-container">
+			<div class="item-container">
+				<div #scrollDiv class="items" (wheel)="onScroll('scroll', $event)" (scroll)="onScroll()">
+					<ul>
+						<li #ele *ngFor="let item of items; let i=index; let e=even;"
+							[class.even]="e" [class.highlight]="item.highlight">
+							<div class="rank fnt-mono">
+								#{{item.rank}}
+							</div>
+							<span class="fnt-mono">
+								{{item.name}}
+							</span>
+							<span class="score fnt-mono">
+								{{item.score}}
+							</span>
+						</li>
+					</ul>				
+				</div>
+			</div>
+			<div class="scrollbar-track">
+				<div #scrollThumb class="scrollbar-thumb"></div>
+			</div>
+		</div>
+	</div>
+</div>
