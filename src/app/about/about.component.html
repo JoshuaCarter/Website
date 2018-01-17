@@ -1,7 +1,7 @@
 <div class="page" (click)="onBlur()">
 	<h1 class="cntr-blk">About This Website</h1>
 	<div class="wrap">
-		<p>This is the first website I've built. It is currently a work in progress and I'm still learning a lot as I go along. You can see the source-code via the github link in the nav menu.</p>
+		<p>This is the first website I've built. It is currently a work in progress and I'm still learning a lot as I go along. 99% of this site was written from scratch. You can see the source-code via the github link in the nav menu.</p>
 		<p>I've made an effort to use modern tools and practices. The following technologies were used in this website's construction.</p>
 	</div>
 	<div class="col-bg-lit">
@@ -64,6 +64,11 @@
 				<li>WinSCP 
 					<i class="fa fa-info-circle" aria-hidden="true" (click)="onTip($event)">
 						<div class="tip">For transfering files to my EC2 instance.</div>
+					</i>
+				</li>
+				<li>Git
+					<i class="fa fa-info-circle" aria-hidden="true" (click)="onTip($event)">
+						<div class="tip">Mainly via VSCode's built-in tools and a pinch of CLI.</div>
 					</i>
 				</li>
 				<li>WAMP PhpMyAdmin 
@@ -141,7 +146,7 @@
 						<div class="tip">The unordered nature of a relational database means that treating it as a ranked table of high-scores requires some fakery. A score's rank is generated as part of a query using table aliases, user variables, and table joins.</div>
 					</i>
 				</li>
-				<li>Data validation 
+				<li>Data sanitisation 
 					<i class="fa fa-info-circle" aria-hidden="true" (click)="onTip($event)">
 						<div class="tip">Prevent SQL injection.</div>
 					</i>
